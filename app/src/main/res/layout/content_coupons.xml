@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zikrabyte.organic.activities.CoupensActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp">
+            <!--<ImageView
+                android:id="@+id/vI_ac_back_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/navigation_back_icon"/>-->
+            <ImageView
+                android:id="@+id/homepage_navigation_menu_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/navigation_menu"
+                android:tint="@color/colorPrimary" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Coupons"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar_layout"
+        android:id="@+id/vL_referral_reward_layout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:id="@+id/referal_code_layout"
+            android:background="@drawable/whitebackground_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/vC_ac_referal_code_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/vT_ssa_coupen_name"
+                android:layout_alignBottom="@+id/vT_ssa_coupen_name"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:buttonTint="@color/blue"
+                android:soundEffectsEnabled="true"
+                tools:ignore="UnusedAttribute"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp" />
+
+            <TextView
+                android:id="@+id/vT_ac_referal_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="8dp"
+                android:text="Coupen Name"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                tools:ignore="RelativeOverlap,RtlHardcoded"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="60dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/button_border"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rupee_symbol"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:layout_marginEnd="6dp"
+                    tools:ignore="RelativeOverlap"
+                    />
+                <TextView
+                    android:id="@+id/vT_ac_referal_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/blue"
+                    android:textSize="16sp"
+                    tools:ignore="RelativeOverlap"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/vT_ac_referal_code"
+                android:layout_below="@+id/vT_ac_referal_code"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textSize="12sp"
+                android:text="Referal code"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentStart="@+id/vT_ac_referal_code"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:id="@+id/reward_code_layout"
+            android:background="@drawable/whitebackground_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/vC_ac_rewardcode_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/vT_ac_reward_code"
+                android:layout_alignBottom="@+id/vT_ac_reward_code"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="12dp"
+                android:buttonTint="@color/blue"
+                android:soundEffectsEnabled="true"
+                tools:ignore="UnusedAttribute"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp" />
+
+            <TextView
+                android:id="@+id/vT_ac_reward_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="8dp"
+                android:text="Coupen Name"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                tools:ignore="RelativeOverlap"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="60dp" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/button_border"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rupee_symbol"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    android:layout_marginRight="6dp"
+                    tools:ignore="RelativeOverlap"
+                    />
+                <TextView
+                    android:id="@+id/vT_ac_reward_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/blue"
+                    android:textSize="16sp"
+                    tools:ignore="RelativeOverlap"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/vT_ac_reward_code"
+                android:layout_below="@+id/vT_ac_reward_code"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="26dp"
+                android:textSize="12sp"
+                android:text="Reward code"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentStart="@+id/vT_ac_reward_code"
+                />
+        </RelativeLayout>
+
+        <!-- <Button
+             android:id="@+id/vT_ssa_referral_apply"
+             android:layout_width="@dimen/button_width"
+             android:layout_height="@dimen/button_height"
+             android:layout_gravity="center_horizontal"
+             android:layout_marginBottom="16dp"
+             android:layout_marginTop="8dp"
+             android:background="@drawable/roundeded_button"
+             android:text="Apply"
+             android:textColor="@color/white"
+             android:textSize="12sp"
+             android:visibility="visible"
+
+             />-->
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/vL_referral_reward_layout"
+        android:id="@+id/vR_ac_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_below="@+id/vR_ac_recycler_view"
+        android:id="@+id/vL_ac_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="350dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/not_found"
+                android:tint="@color/blue" />
+
+            <TextView
+                android:id="@+id/no_items_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Sorry"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="There are no Coupens Available"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right now"
+            android:textSize="14sp" />
+
+        <!-- <Button
+             android:id="@+id/vB_ac_start_shopping"
+             android:layout_alignParentBottom="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginBottom="56dp"
+             android:layout_marginTop="26dp"
+             android:layout_gravity="center_horizontal"
+             android:layout_width="@dimen/button_width"
+             android:layout_height="@dimen/button_height"
+             android:background="@drawable/roundeded_button"
+             android:textColor="@color/colorwhite"
+             android:text="Start Shopping"
+             android:textAllCaps="false"/>-->
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/vT_ssa_coupen_apply"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundeded_button"
+        android:text="Apply"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="visible"
+
+        />
+
+</RelativeLayout>
+</RelativeLayout>

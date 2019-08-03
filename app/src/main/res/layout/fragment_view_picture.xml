@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zikrabyte.organic.activities.ViewPictureFragment">
+
+  <ImageView
+      android:id="@+id/vI_fvp_imageview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:src="@drawable/delivery"
+      android:layout_above="@+id/vR_choose_picture_recyclerview"/>
+    <ImageView
+        android:id="@+id/vI_fvp_cancel"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/cancel"
+        android:tint="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="TODO" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/vR_choose_picture_recyclerview"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+        <!-- <ImageView
+             android:id="@+id/vI_aar_back_icon"
+             android:layout_width="36dp"
+             android:layout_height="36dp"
+             android:tint="@color/colorPrimary"
+             android:layout_alignParentLeft="true"
+             android:src="@drawable/navigation_back_icon"/>-->
+
+        <ImageView
+            android:id="@+id/homepage_navigation_menu_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/navigation_menu"
+            android:tint="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="My Referral code"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <com.zikrabyte.organic.customs.CircleImageView
+        android:id="@+id/logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/referal_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Referral code is : "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vT_aar_referral_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Referral code"
+            android:textColor="@color/blue"
+            android:textIsSelectable="true"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/applied_referal_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/referal_code_layout"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Applied Referral code : "
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/vT_aar_applied_referral_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/blue"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:id="@+id/vL_aar_add_new_referral_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="Apply referral ?"
+                android:textColor="@color/blue"
+                android:textIsSelectable="true"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/edit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/applied_referal_code_layout"
+        android:id="@+id/vL_aar_referral_applying_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/whitebackground_textview"
+            android:orientation="horizontal">
+            <EditText
+                android:paddingStart="16dp"
+                android:id="@+id/vE_aar_applied_referral_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:maxLength="10"
+                android:layout_gravity="center_vertical"
+                android:focusableInTouchMode="true"
+                android:inputType="text"
+                android:gravity="center"
+                android:hint="Enter referral code"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/vI_aar_cancel"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/cancel"
+                android:layout_gravity="center_vertical"
+                android:tint="@color/blue"/>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/vB_aar_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/roundeded_button"
+            android:text="Apply"
+            android:layout_gravity="center_vertical"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vL_aar_referral_applying_layout"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="By referring a new user to this app you can get Rs. 50 off on your next order" />
+
+    <ProgressBar
+        android:id="@+id/vP_aar_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="@color/blue"
+        android:progressTint="@color/colorPrimary"
+        android:layout_above="@+id/vT_aar_share"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/vT_aar_share"
+        android:layout_width="180dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/roundeded_button"
+        android:text="Share"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</RelativeLayout>

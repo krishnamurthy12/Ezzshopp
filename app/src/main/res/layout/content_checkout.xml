@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp">
+
+        <!--<ImageView
+            android:id="@+id/vI_aco_back_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/navigation_back_icon"
+            android:tint="@color/colorPrimary" />-->
+        <ImageView
+            android:id="@+id/homepage_navigation_menu_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/navigation_menu"
+            android:tint="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="CheckOut"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/whitebackground_textview"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:paddingEnd="0dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:paddingStart="16dp"
+            android:text="Address"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+
+            <TextView
+                android:id="@+id/vT_aco_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="56dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/vT_aco_house_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/vT_aco_apartment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="56dp"
+                android:text="Apartment name"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vT_aco_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="-"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/vT_aco_pincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/vT_aco_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="56dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/address_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/vB_aco_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/whitebackground_textview"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Change Address"
+            android:textAllCaps="false"
+            android:textColor="@color/blue" />
+
+        <!--<Button
+            android:id="@+id/vB_aco_delete"
+            android:layout_width="110dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="26dp"
+            android:background="@drawable/whitebackground_textview"
+            android:text="Change"
+            android:textAllCaps="false" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/vT_aco_choose_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Choose delivery date"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/whitebackground_textview"
+            android:gravity="center_horizontal">
+
+            <noman.weekcalendar.WeekCalendar
+                android:id="@+id/weekCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center"
+                app:numOfPages="150" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/vT_aco_expected_delivery"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:text="Expected Delivery : "
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/blue"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/vT_aco_expected_delivery"
+                android:id="@+id/vT_aco_selected_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/payment_spinner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/vP_aco_progressbar"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="@drawable/whitebackground_textview">
+            <Spinner
+                android:id="@+id/vS_aco_payment_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                style="@style/Base.Widget.AppCompat.TextView.SpinnerItem"
+                android:paddingRight="36dp"
+                android:paddingLeft="26dp" />
+
+        </LinearLayout>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="Select payment type"
+
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/vR_aco_payment_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/vR_aco_cod_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:buttonTint="@color/blue"
+                android:text="Cash on delivery"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/vR_aco_online_pay_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="8dp"
+                android:buttonTint="@color/blue"
+                android:text="Online payment"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/vP_aco_progressbar"
+        android:layout_width="32dp"
+        android:layout_height="26dp"
+        android:layout_above="@+id/vB_aco_proceed_payment"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="@color/blue"
+        android:progressTint="@color/colorPrimary"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/vB_aco_proceed_payment"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="26dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/roundeded_button"
+        android:text="Proceed Order"
+        android:textColor="@color/colorwhite" />
+</RelativeLayout>

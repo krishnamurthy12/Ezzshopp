@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zikrabyte.organic.activities.HomeActivity"
+    tools:showIn="@layout/app_bar_main">
+
+   <android.support.design.widget.TabLayout
+       android:id="@+id/home_page_tablayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/colorwhite"
+       android:minHeight="?attr/actionBarSize"
+       app:theme="@style/AppTheme.AppBarOverlay"
+       app:tabIndicatorColor="@color/colorPrimary"
+       app:tabIndicatorHeight="2dp"
+       app:tabSelectedTextColor="@color/colorPrimary"
+       app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+       app:tabTextColor="@color/dark_gray">
+
+   </android.support.design.widget.TabLayout>
+
+
+   <ProgressBar
+       android:visibility="gone"
+       android:layout_margin="26dp"
+       android:layout_gravity="center_horizontal"
+       android:id="@+id/vP_cm_progressbar"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:indeterminateTint="@color/blue"
+       android:progressTint="@color/colorPrimary"
+       />
+
+   <TextView
+       android:visibility="gone"
+       android:id="@+id/vT_cm_textview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:gravity="center_horizontal"
+       android:textColor="@color/blue"
+       android:textSize="18sp"
+       android:layout_marginLeft="16dp"
+       android:layout_marginRight="16dp"
+       android:text="@string/err_msg_nointernet"
+       />
+
+   <!--<Button
+       android:id="@+id/vB_cm_retry"
+       android:visibility="gone"
+       android:layout_width="wrap_content"
+       android:layout_height="40dp"
+       android:background="@color/dark_gray"
+       android:layout_gravity="center_horizontal"
+       android:textSize="18sp"
+       android:layout_marginTop="26dp"
+       android:paddingTop="8dp"
+       android:paddingBottom="8dp"
+       android:paddingStart="16dp"
+       android:paddingEnd="16dp"
+       android:gravity="center"
+       android:text="Retry"
+       android:textAllCaps="false"
+       android:textColor="@color/white"/>-->
+
+
+
+      <android.support.v4.view.ViewPager
+          android:layout_marginTop="16dp"
+          android:id="@+id/tbt_viewpager"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+      </android.support.v4.view.ViewPager>
+
+
+
+
+  <!-- <android.support.v7.widget.RecyclerView
+       android:id="@+id/recyclerview_homepage"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+   </android.support.v7.widget.RecyclerView>-->
+
+</LinearLayout>

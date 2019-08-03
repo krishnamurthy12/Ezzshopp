@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cart_bg"
+    tools:context="com.zikrabyte.organic.activities.OrderHistoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+      <!--  <ImageView
+            android:id="@+id/vI_aoh_back_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="TODO"
+            android:src="@drawable/navigation_back_icon"
+            android:tint="@color/colorPrimary" />-->
+        <ImageView
+            android:id="@+id/homepage_navigation_menu_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/navigation_menu"
+            android:tint="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="My Orders"
+            android:paddingTop="8dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_margin="8dp"
+        android:id="@+id/vR_aoh_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/vL_aoh_empty_layout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/bottom_layout"
+        >
+        <TextView
+            android:id="@+id/no_items_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have no past orders"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/text"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lets get you started"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click away"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        >
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:id="@+id/vB_aoh_start_shopping"
+            android:textColor="@color/colorwhite"
+            android:text="Start Shopping"
+            android:background="@drawable/roundeded_button"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

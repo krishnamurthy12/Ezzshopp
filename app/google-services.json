@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "504456651925",
+    "firebase_url": "https://ezzshopp-b0a3d.firebaseio.com",
+    "project_id": "ezzshopp-b0a3d",
+    "storage_bucket": "ezzshopp-b0a3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504456651925:android:f4c6adcb7d47ac29",
+        "android_client_info": {
+          "package_name": "com.zikrabyte.organic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504456651925-qv0mv0hm0dvac2rttqsv2orgbdqio5qd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zikrabyte.organic",
+            "certificate_hash": "a4239e7ba0ebc1b731aaaec9bff205fc0c794f42"
+          }
+        },
+        {
+          "client_id": "504456651925-a4ke5fg0drgd4gqhind0nndj9rp5g7b5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqe6p3PqtrCQkyxr8tnCg3HLehWVw0b3M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504456651925-a4ke5fg0drgd4gqhind0nndj9rp5g7b5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

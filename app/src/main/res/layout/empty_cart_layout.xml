@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/empty_cart">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+        <ImageView
+            android:id="@+id/vI_eca_back_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:tint="@color/colorPrimary"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/navigation_back_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Cart"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/no_items_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No items in your cart"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:id="@+id/text"
+        android:layout_below="@+id/no_items_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your favorite vegetables are just a"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click away"
+        android:textSize="14sp"
+        />
+
+    <Button
+        android:id="@+id/vB_eca_start_shopping"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/roundeded_button"
+        android:textColor="@color/colorwhite"
+        android:text="Start Shopping"
+        android:textAllCaps="false"/>
+</RelativeLayout>

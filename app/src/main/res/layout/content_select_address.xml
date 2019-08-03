@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/select_address_bg"
+    tools:context="com.zikrabyte.organic.activities.SelectAddressActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<ImageView
+            android:id="@+id/vI_asa_back_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/navigation_back_icon"
+            android:contentDescription="TODO" />-->
+        <ImageView
+            android:id="@+id/homepage_navigation_menu_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/navigation_menu"
+            android:tint="@color/colorPrimary" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Address"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/vR_asa_recyclerview"
+        android:layout_below="@+id/toolbar_layout"
+        android:layout_above="@+id/vB_asa_add_new_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/vL_asa_empty_layout"
+        android:layout_above="@+id/vB_asa_add_new_address"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="26dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/no_items_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have no saved address"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/text"
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tell us where you want your"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="order delivery"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/vB_asa_add_new_address"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/roundeded_button"
+        android:textColor="@color/colorwhite"
+        android:text="Add new Address"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="36dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

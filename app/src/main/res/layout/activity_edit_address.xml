@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zikrabyte.organic.activities.EditAddressActivity">
+
+        <RelativeLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+            <ImageView
+                android:id="@+id/vI_aea_back_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:tint="@color/colorPrimary"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/navigation_back_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Address"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_below="@+id/toolbar_layout"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/vE_aea_name"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:hint="Name"
+            android:textSize="16sp"
+            android:paddingLeft="26dp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:background="@drawable/whitebackground_textview"/>
+        <EditText
+            android:id="@+id/vE_aea_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:hint="Phone number"
+            android:paddingLeft="26dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:background="@drawable/whitebackground_textview"/>
+        <EditText
+            android:id="@+id/vE_aea_house_number"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:hint="House/Door number"
+            android:paddingLeft="26dp"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:background="@drawable/whitebackground_textview"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/whitebackground_textview">
+            <Spinner
+                android:id="@+id/vS_aea_select_apartment"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                style="@style/Base.Widget.AppCompat.TextView.SpinnerItem"
+                android:paddingRight="26dp"
+                android:paddingLeft="26dp" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/vE_aea_city"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:hint="City"
+            android:paddingLeft="26dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:background="@drawable/whitebackground_textview"/>
+
+        <EditText
+            android:id="@+id/vE_aea_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:hint="Pin code"
+            android:paddingLeft="26dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:maxLength="6"
+            android:inputType="number"
+            android:background="@drawable/whitebackground_textview"/>
+
+        <Button
+            android:id="@+id/vB_aea_update"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="Update"
+            android:textColor="@color/colorwhite"
+            android:gravity="center"
+           android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="26dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/roundeded_button"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+</ScrollView>

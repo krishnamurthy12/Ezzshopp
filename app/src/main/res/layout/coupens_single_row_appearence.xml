@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/whitebackground_textview"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:id="@+id/coupen_main_layout"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <CheckBox
+        android:id="@+id/vRB_ssa_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/vT_ssa_coupen_name"
+        android:layout_alignBottom="@+id/vT_ssa_coupen_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
+        android:buttonTint="@color/blue"
+        android:soundEffectsEnabled="true"
+        tools:ignore="UnusedAttribute"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp" />
+
+    <TextView
+        android:id="@+id/vT_ssa_coupen_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Coupen Name"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        tools:ignore="RelativeOverlap"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp" />
+
+    <LinearLayout
+        android:id="@+id/amount_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/button_border"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rupee_symbol"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:layout_marginRight="6dp"
+            tools:ignore="RelativeOverlap"
+            />-->
+        <TextView
+            android:id="@+id/vT_ssa_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            tools:ignore="RelativeOverlap"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/vT_ssa_coupen_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/vT_ssa_coupen_name"
+        android:layout_below="@+id/vT_ssa_coupen_name"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="26dp"
+        android:textSize="12sp"
+        android:text="Coupen Description"
+        android:layout_marginBottom="8dp"
+        android:layout_alignLeft="@+id/vT_ssa_coupen_name"
+        />
+
+   <!-- <Button
+        android:visibility="gone"
+        android:id="@+id/vT_ssa_coupen_apply"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/vT_ssa_coupen_description"
+        android:textSize="12sp"
+        android:text="Apply"
+        android:textColor="@color/white"
+        android:background="@drawable/roundeded_button"
+        android:layout_marginBottom="8dp"
+
+        />-->
+
+
+</RelativeLayout>

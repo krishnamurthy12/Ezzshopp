@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/signup_bg"
+    tools:context="com.zikrabyte.organic.activities.ItemDescriptionActivity">
+    <RelativeLayout
+        android:id="@+id/item_description_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/idt_navigation_menu_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingTop="8dp"
+            android:clickable="@bool/default_circle_indicator_snap"
+            android:background="@drawable/rippel_effect"
+            android:src="@drawable/navigation_menu"
+            android:tint="@color/colorPrimary" />
+        <ImageView
+            android:id="@+id/idt_logo"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="56dp"
+            android:layout_height="48dp"
+            android:src="@drawable/logo"/>
+
+        <ImageView
+            android:id="@+id/idt_search_icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:paddingTop="8dp"
+            android:background="@drawable/rippel_effect"
+            android:layout_toLeftOf="@+id/idt_cart_icon_layout"
+            android:paddingLeft="0dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/search_icon" />
+        <FrameLayout
+            android:id="@+id/idt_cart_icon_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rippel_effect"
+            android:clickable="true"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:paddingTop="8dp"
+                android:layout_width="42dp"
+                android:layout_height="40dp"
+                android:src="@drawable/empty_bag" />
+            <TextView
+                android:id="@+id/vT_idt_cart_value"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/rounded_edittext"/>
+        </FrameLayout>
+
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/content_item_description" />
+
+
+
+</LinearLayout>

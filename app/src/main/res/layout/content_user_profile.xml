@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cart_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <!--<ImageView
+                    android:id="@+id/vI_aup_back_icon"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/navigation_back_icon"
+                    android:tint="@color/colorPrimary" />-->
+                <ImageView
+                    android:id="@+id/homepage_navigation_menu_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/navigation_menu"
+                    android:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="My Profile"
+                    android:paddingTop="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/profile_pic_layout"
+                android:layout_below="@+id/toolbar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center">
+
+                <com.zikrabyte.organic.customs.CircleImageView
+                    android:id="@+id/vCIV_aup_profile_pic"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="16dp" />
+
+                <ImageView
+                    android:id="@+id/vI_aup_edit_profile_picture"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="bottom|end"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_edit"
+                    android:tint="@color/colorPrimary" />
+            </FrameLayout>
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_below="@+id/profile_pic_layout"
+                android:id="@+id/vP_aup_progressbar"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <LinearLayout
+                android:id="@+id/user_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vP_aup_progressbar"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/vE_aup_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/whitebackground_textview"
+                    android:hint="User Name"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="26dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/vE_aup_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/whitebackground_textview"
+                    android:hint="Email id"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="26dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/vE_aup_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="@color/gray"
+                    android:background="@drawable/whitebackground_textview"
+                    android:paddingStart="26dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="0dp"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_below="@+id/user_info_layout"
+                android:id="@+id/vB_aup_update"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:text="Update profile"
+                android:textAllCaps="false"
+                android:layout_marginTop="56dp"
+                android:textColor="@color/colorwhite"
+                android:gravity="center"
+                android:background="@drawable/roundeded_button"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.zikrabyte.organic.activities.SelectAddressActivity">
+
+    <LinearLayout
+        android:id="@+id/vL_ssa_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whitebackground_textview"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:textColor="@color/blue"
+                android:textSize="18sp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                >
+                <RadioButton
+                    android:id="@+id/vR_ssa_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:buttonTint="@color/blue"/>
+            </RadioGroup>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/vT_ssa_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Krishnamurthy T"
+                android:layout_marginRight="56dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/vT_ssa_house_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="303,304"
+                    android:textSize="14sp" />
+
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/vT_ssa_apartment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RSMJ Towers"
+                android:layout_marginRight="56dp"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/vT_ssa_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/vT_ssa_pincode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pincode"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/vT_ssa_contact_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9901333695"
+                android:layout_marginRight="56dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="16dp">
+        <Button
+            android:id="@+id/vB_ssa_edit"
+            android:layout_width="110dp"
+            android:layout_height="36dp"
+            android:text="Edit"
+            android:textColor="@color/blue"
+            android:textAllCaps="false"
+            android:layout_marginRight="26dp"
+            android:background="@drawable/whitebackground_textview"/>
+        <Button
+            android:id="@+id/vB_ssa_delete"
+            android:layout_width="110dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="26dp"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:background="@drawable/whitebackground_textview"/>
+    </LinearLayout>
+</LinearLayout>

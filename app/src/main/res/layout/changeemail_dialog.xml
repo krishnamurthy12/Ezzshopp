@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/cED_vE_change_email"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="Enter new email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="16dp"
+        android:paddingRight="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/rounded_edittext"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp">
+        <Button
+            android:id="@+id/cED_vB_skip"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/skip"
+            android:textColor="@color/colorPrimary"/>
+        <Button
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/cED_vB_change_email"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:text="change"
+            android:textColor="@color/colorwhite"
+            android:background="@drawable/roundeded_button"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

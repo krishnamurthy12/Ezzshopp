@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/walk_through_bg"
+    tools:context="com.zikrabyte.organic.activities.WalkThroughActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/circle_indicator_id"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:visibility="visible"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/vB_wa_signin"/>
+    <Button
+        android:id="@+id/vB_wa_signin"
+        android:layout_above="@+id/vB_wa_signup"
+        android:layout_width="260dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:textColor="@color/colorwhite"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:background="@drawable/roundeded_button"/>
+    <Button
+        android:id="@+id/vB_wa_signup"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorwhite"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/roundeded_button"/>
+
+
+</RelativeLayout>

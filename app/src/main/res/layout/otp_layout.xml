@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2E5E4"
+   >
+
+    <!--second layout-->
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/vL_second_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="46dp"
+        android:layout_gravity="center"
+        android:background="@drawable/whitebackground_textview"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Verify Phone Number"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We have sent SMS with activation code"
+            android:layout_gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to: +91-"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/vT_ol_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/vE_ol_otp"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Enter OTP"
+            android:inputType="phone"
+            android:maxLength="5"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:layout_marginTop="26dp"
+            />
+
+        <TextView
+            android:id="@+id/vT_ol_resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:layout_marginTop="26dp"
+            android:textColor="@color/colorPrimary"/>
+        <!--<ProgressBar
+            android:id="@+id/vP_otp_layout_progressbar"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/blue"
+            android:progressTint="@color/colorPrimary"/>-->
+
+        <Button
+            android:id="@+id/vB_ol_verify"
+            android:layout_marginTop="26dp"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="verify"
+            android:textColor="@color/colorwhite"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/roundeded_button"
+            android:layout_gravity="center_horizontal"/>
+        <ProgressBar
+            android:id="@+id/vP_ol_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:indeterminateTint="@color/blue"
+            android:progressTint="@color/colorPrimary"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</FrameLayout>
